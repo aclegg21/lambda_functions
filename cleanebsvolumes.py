@@ -1,3 +1,5 @@
+import boto3
+
 def lambda_handler(object, context):
     #get list of regions
     ec2_client = boto3.client('ec2')
@@ -17,4 +19,4 @@ def lambda_handler(object, context):
             print("Deleting EBS volume: {}, Size: {} GiB".format(v.id, v.size))
             v.delete()
 
-#testing
+#testing testing
