@@ -16,3 +16,5 @@ def lambda_handler(object, context):
             v = ec2.Volume(volume.id)
             print("Deleting EBS volume: {}, Size: {} GiB".format(v.id, v.size))
             v.delete()
+
+#testing
